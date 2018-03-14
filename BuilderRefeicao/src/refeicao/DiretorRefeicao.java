@@ -20,7 +20,7 @@ public class DiretorRefeicao {
             refeicaoBuilder.adicionarSuco(sabor);                
         refeicaoBuilder.preparaHamburgerCarne();
         
-        if(batata) refeicaoBuilder.preparaBatata();
+        if(batata==true) refeicaoBuilder.preparaBatata();
         return novaRefeicao;        
     }     
     public Refeicao preparaVegetariana(String sabor, String tipoBebida, boolean batata){        
@@ -31,7 +31,9 @@ public class DiretorRefeicao {
         else
             refeicaoBuilder.adicionarSuco(sabor);     
         refeicaoBuilder.preparaHamburgerVegetariano();
-        if(batata) refeicaoBuilder.preparaBatata();
+        if(batata) {
+            refeicaoBuilder.preparaBatata();
+        }
         return novaRefeicao;        
     }            
     
